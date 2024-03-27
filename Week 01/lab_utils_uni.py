@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
 from matplotlib.gridspec import GridSpec
 from matplotlib.colors import LinearSegmentedColormap
-from ipywidgets import interact
 from lab_utils_common import compute_cost
 from lab_utils_common import dlblue, dlorange, dldarkred, dlmagenta, dlpurple, dlcolors
 
@@ -74,7 +73,6 @@ def plt_intuition(x_train, y_train):
         tmp_w = w_array[i]
         cost[i] = compute_cost(x_train, y_train, tmp_w, tmp_b)
 
-    @interact(w=(*w_range,10),continuous_update=False)
     def func( w=150):
         f_wb = np.dot(x_train, w) + tmp_b
 
