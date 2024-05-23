@@ -3,7 +3,6 @@ plot_overfit
     class and assocaited routines that plot an interactive example of overfitting and its solutions
 """
 import math
-from ipywidgets import Output
 from matplotlib.gridspec import GridSpec
 from matplotlib.widgets import Button, CheckButtons
 from sklearn.linear_model import LogisticRegression, Ridge
